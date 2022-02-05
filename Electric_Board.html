@@ -1,0 +1,42 @@
+<html>
+<head><h1>EB Bill Calculator</h></head>
+<body>
+units: <input type="text" id="units" value="Enter">
+<button onclick="document.write(calculateBill(units));">Calculate</button>
+<script>
+function calculateBill()
+{
+     
+   
+    var units=document.getElementById("units").value;
+    if (units <= 100)
+    {
+        return units * 0;
+    }
+    else if (units <= 200)
+    {
+        return (100 * 0)
+            + (units - 100)
+                  * 1.5;
+    }
+    else if (units <= 500)
+    {
+        return (100 * 0)
+            +  (100 * 2)
+            + (units - 200)
+                  * 3;
+    }
+    else if (units > 500)
+    {
+        return (100 * 0)
+            +  (100 * 3.5)
+            + (300 * 4.6)
+            + (units - 500)
+                  * 6.6;
+    }
+    return 0;
+
+} 
+
+ </script></body>
+</html>
